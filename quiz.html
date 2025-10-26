@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подбор услуги - IPhub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="img/logo.png" alt="IPhub"></div>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="services.html">Услуги</a>
+                <a href="cases.html">Кейсы</a>
+                <a href="faq.html">FAQ</a>
+                <a href="quiz.html" class="active">Квиз</a>
+            </nav>
+            <div class="phone">+7 (888) 888 88 88</div>
+        </div>
+    </header>
+
+    <section class="quiz-hero">
+        <div class="container">
+            <h1>Не знаете, что вам нужно?</h1>
+            <p>Пройдите квиз, чтобы подобрать оптимальное решение</p>
+        </div>
+    </section>
+
+    <section class="quiz-container">
+        <div class="container">
+            <div class="quiz-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 25%"></div>
+                </div>
+                <span>2/8</span>
+            </div>
+
+            <div class="quiz-question">
+                <h2>С какой целью вы обращаетесь?</h2>
+            </div>
+
+            <div class="quiz-options">
+                <label class="quiz-option">
+                    <input type="radio" name="purpose">
+                    <span>Регистрацию полезной модели</span>
+                </label>
+                <label class="quiz-option">
+                    <input type="radio" name="purpose">
+                    <span>Регистрацию промышленного образца</span>
+                </label>
+                <label class="quiz-option">
+                    <input type="radio" name="purpose">
+                    <span>Регистрацию прав на использование</span>
+                </label>
+                <label class="quiz-option">
+                    <input type="radio" name="purpose">
+                    <span>Подготовка заявки на выдачу патента</span>
+                </label>
+            </div>
+
+            <div class="quiz-navigation">
+                <button class="btn secondary">Назад</button>
+                <button class="btn primary">Далее</button>
+            </div>
+
+            <div class="quiz-bonuses">
+                <h3>Бонусы после прохождения</h3>
+                <div class="bonuses">
+                    <div class="bonus">Бесплатная консультация</div>
+                    <div class="bonus">Персональный план</div>
+                    <div class="bonus">Скидка 15%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="img/logo.png" alt="IPhub" width="100">
+                    <p>ООО «Центр интеллектуальной собственности и инноваций»</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Главная</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="cases.html">Кейсы</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="footer-contacts">
+                    <p>+7 (888) 888 88 88</p>
+                    <p>example@iphub.com</p>
+                </div>
+            </div>
+            <p class="copyright">© 2024 IPhub. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

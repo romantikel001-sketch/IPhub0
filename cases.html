@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кейсы - IPhub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">IPhub</div>
+                <div class="contact-phone">+7 (888) 888 88 88</div>
+
+                <nav class="nav-main">
+                    <a href="index.html">Главная</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="cases.html" class="active">Кейсы</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="#consult" class="cta-button">Получить консультацию</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="cases-page">
+        <div class="container">
+          <div class="cases-header">
+  <h1>Все кейсы</h1>
+  <img src="img/0.png" alt="Кейсы IPhub">
+</div>
+<div class="search-box">
+  <input type="text" placeholder="Поиск кейсов..." />
+  <button>Найти</button>
+</div>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <img src="img/555.png" alt="CIRCLE — производитель косметической продукции">
+                    <h3>CIRCLE — производитель косметической продукции</h3>
+                    <p>Комплексная защита бренда на международных рынках с регистрацией товарного знака в 5 странах. Проведён правовой аудит, подготовлены документы и успешно зарегистрированы торговые марки в ЕС и Азии.</p>
+                </div>
+                <div class="case-card">
+                    <img src="img/1344.png" alt="Camera IQ — производитель систем машинного зрения">
+                    <h3>Camera IQ — производитель систем машинного зрения</h3>
+                    <p>Проведена полная патентная защита алгоритмов компьютерного зрения, а также регистрация уникальных схем и технологий обработки изображений. Результат — защита IP в 3 юрисдикциях.</p>
+                </div>
+                <div class="case-card">
+                    <img src="img/666.png" alt="НАНОБ — производитель строительных материалов">
+                    <h3>Hands — производитель строительных материалов</h3>
+                    <p>Зарегистрирована полезная модель нового строительного состава, устойчивая к влаге и перепадам температур. Получен патент РФ и сертификаты соответствия.</p>
+                </div>
+                <div class="case-card">
+                    <img src="img/1344.png" alt="MetaRax — IT решения">
+                    <h3>MetaRax — IT решения</h3>
+                    <p>Разработана стратегия защиты авторских прав на программное обеспечение. Подана регистрация в Роспатенте, проведён аудит безопасности исходного кода.</p>
+                </div>
+                <div class="case-card">
+                    <img src="img/555.png" alt="GreenLab — экотехнологии и переработка">
+                    <h3>GreenLab — экотехнологии и переработка</h3>
+                    <p>Проведена патентная регистрация уникальной технологии переработки пластиковых отходов. Получены международные сертификаты ISO и защита бренда в Европе.</p>
+                </div>
+                <div class="case-card">
+                    <img src="img/666.png" alt="SkyTech — инновационные дроны">
+                    <h3>SkyTech — инновационные дроны</h3>
+                    <p>Проведено патентование систем навигации и интеллектуального управления полётом. Подготовлены документы для выхода на рынок США и Канады.</p>
+                </div>
+            </div>
+            <section class="consultation-section" id="consult">
+                <h2>Не нашли, что искали?</h2>
+                <h3>Оставьте заявку, мы вам поможем!</h3>
+                <p>Наши специалисты найдут решение для любых задач в сфере защиты и регистрации интеллектуальной собственности.</p>
+                <button class="btn btn-primary" onclick="openConsultationForm()">Оставить заявку на консультацию</button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>IPhub</h3>
+                    <p>ООО «Центр интеллектуальной собственности и инноваций»</p>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 IP hub. Все права защищены.</p>
+                    </div>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="cases.html">Кейсы</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <p>+7 (888) 888 88 88</p>
+                    <p>example@iphub.com</p>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Соцсети</h4>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Оставить заявку на консультацию</h3>
+            <form id="consultationForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Опишите вашу задачу" rows="4"></textarea>
+                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

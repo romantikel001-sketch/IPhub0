@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - IPhub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">"IPhub""</div>
+                <div class="contact-phone">+7 (888) 888 88 88</div>
+            <nav class="nav-main">
+                <a href="index.html">Главная</a>
+                <a href="services.html">Услуги</a>
+                <a href="cases.html">Кейсы</a>
+                <a href="faq.html" class="active">FAQ</a>
+                <a href="#consult" class="cta-button">Получить консультацию</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="faq-page">
+        <div class="container">
+            <h1>FАQ</h1>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Начните вводить слово...">
+            </div>
+
+            <div class="categories">
+                <button class="category-btn active">Все услуги</button>
+                <button class="category-btn">Товарные знаки</button>
+                <button class="category-btn">Патентование</button>
+                <button class="category-btn">Дизайн</button>
+                <button class="category-btn">IT</button>
+                <button class="category-btn">Защита</button>
+                <button class="category-btn">Управление</button>
+                <button class="category-btn">Обучение</button>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question">Что такое патент и что он дает?</div>
+                    <div class="faq-answer">
+                        <p>Патент — это документ, предоставляющий вам исключительное право на определенный результат интеллектуальной деятельности (изобретение, полезную модель, промышленный образец). Иными словами, патент — это гарантия вашей временной монополии на производство, распространение и сбыт определенного продукта.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Какие документы необходимо представить для получения патента на изобретение?</div>
+                    <div class="faq-answer">
+                        <p>Для получения патента на изобретение необходимо предоставить: заявку на выдачу патента, описание изобретения, формулу изобретения, реферат, чертежи (если они необходимы для понимания сущности изобретения), документ об оплате патентной пошлины.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Какое порядок рассмотрения заявки на выдачу патента на изобретение в Роспатентке?</div>
+                    <div class="faq-answer">
+                        <p>Рассмотрение заявки включает: формальную экспертизу, экспертизу по существу, публикацию сведений о заявке, выдачу патента. Общий срок рассмотрения составляет от 12 до 24 месяцев.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Можно ли продлить срок действия исключительного права?</div>
+                    <div class="faq-answer">
+                        <p>Срок действия патента на изобретение составляет 20 лет, на полезную модель — 10 лет, на промышленный образец — 5 лет с возможностью продления. Продление возможно при условии уплаты соответствующих пошлин.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Какие документы необходимо представить для получения патента на полезную модель?</div>
+                    <div class="faq-answer">
+                        <p>Для полезной модели требуется: заявка, описание, формула, реферат, чертежи (при необходимости), документ об оплате пошлины.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="consultation-section">
+                <h2>Не нашли, что искали?</h2>
+                <h3>Оставьте заявку, мы вам поможем!</h3>
+                <p>У нас есть решения для всех ваших потребностей в сфере защиты и регистрации интеллектуальной собственности.</p>
+                <button class="btn btn-primary" onclick="openConsultationForm()">Оставить заявку на консультацию</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>IPhub</h3>
+                    <p>Общество с ограниченной ответственностью «Центр интеллектуальной собственности и инноваций»</p>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 IP hub. Все права защищены.</p>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="cases.html">Кейсы</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <p>+7 (888) 888 88 88</p>
+                    <p>example@iphub.com</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Соцсети</h4>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Оставить заявку на консультацию</h3>
+            <form id="consultationForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Опишите вашу задачу" rows="4"></textarea>
+                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

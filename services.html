@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Все услуги — IPhub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div class="logo">"IPhub"</div>
+        <div class="contact-phone">+7 (888) 888 88 88</div>
+        <nav class="nav-main">
+          <a href="index.html">Главная</a>
+          <a href="services.html" class="active">Услуги</a>
+          <a href="cases.html">Кейсы</a>
+          <a href="faq.html">FAQ</a>
+          <a href="#consult" class="cta-button">Получить консультацию</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="search-block">
+    <div class="container">
+      <input type="text" id="serviceSearch" placeholder="Поиск по услугам...">
+    </div>
+  </section>
+
+<section class="services-page">
+  <div class="container">
+    <h2>Все услуги</h2>
+    <p class="section-subtitle">Полный перечень решений для защиты и развития вашей интеллектуальной собственности</p>
+
+    <div class="services-grid" id="servicesList">
+
+      <div class="service-card">
+        <img src="img/2.png" alt="Регистрация товарного знака">
+        <h3>Регистрация товарного знака</h3>
+        <p>Полное сопровождение регистрации в Роспатенте — от заявки до получения свидетельства.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="img/3.png" alt="Изобретения и полезные модели">
+        <h3>Изобретения и полезные модели</h3>
+        <p>Подготовка и подача заявок на патенты. Защита уникальных решений и технологий.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="img/4.png" alt="Промышленные образцы">
+        <h3>Промышленные образцы</h3>
+        <p>Оформление прав на внешний вид изделий. Защита дизайнерских решений.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="img/5.png" alt="Программы для ЭВМ">
+        <h3>Программы для ЭВМ и базы данных</h3>
+        <p>Регистрация программного обеспечения и баз данных. Защита авторских прав.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="img/6.png" alt="Лицензии и франчайзинг">
+        <h3>Лицензии, франчайзинг и отчуждение прав</h3>
+        <p>Подготовка и регистрация лицензионных договоров и соглашений.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="img/7.png" alt="Судебная защита">
+        <h3>Представление интересов, суды</h3>
+        <p>Представление интересов клиентов при спорах и нарушениях прав.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="img/5.png" alt="Авторское право">
+        <h3>Авторское право и защита контента</h3>
+        <p>Регистрация авторских произведений, защита контента в сети и СМИ.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="img/2.png" alt="Международная регистрация">
+        <h3>Международная регистрация товарных знаков</h3>
+        <p>Подача заявок по Мадридской системе, защита бренда за рубежом.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section class="red-band" id="consult">
+    <div class="container">
+      <div class="red-band-content">
+        <div class="col">
+          <h2>Не нашли нужную услугу?</h2>
+          <p>Оставьте заявку — мы подберём индивидуальное решение под вашу задачу. Консультация бесплатна.</p>
+          <div style="margin-top:16px">
+            <button class="btn btn-ghost" onclick="openConsultationForm()">Оставить заявку</button>
+          </div>
+          <img src="img/placeholder.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h3>IPhub</h3>
+          <p>Общество с ограниченной ответственностью «Центр интеллектуальной собственности и инноваций»</p>
+          <div class="footer-bottom">
+            <p>&copy; 2025 IP hub. Все права защищены.</p>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="cases.html">Кейсы</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h4>Контакты</h4>
+          <p>+7 (888) 888 88 88</p>
+          <p>example@iphub.com</p>
+        </div>
+        <div class="footer-social">
+          <h4>Соцсети</h4>
+          <p>Facebook</p>
+          <p>Instagram</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById('serviceSearch');
+    const services = document.querySelectorAll('.service-card');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+      services.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(query) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
